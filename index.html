@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Mi pagina web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#informacion">INFORMACION</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="informacion" class="columns">
+        <div class="column">
+            <h2>Perrito</h2>
+            <img src="perrito.jpg" alt="Imagen 1">
+            <p class="justify">En general, se caracterizan por tener un cuerpo relativamente alto (de 36 cm a 1.45 m y 1 a 79 kg), 
+            patas largas y cola cilíndrica y peluda. Es un animal sociable con una jerarquía de dominancia bien establecida.</p>
+        </div>
+        <div class="column">
+            <h2>Gatito</h2>
+            <img src="gatito.jpg" alt="Imagen 2">
+            <p class="justify">Tiene el cuerpo cubierto de pelo, tiene cuatro patas y una colita. 
+            Tiene unas uñas muy afiladas que utiliza para cazar y sujetar ratas y ratones.
+             Utiliza la lengua para limpiarse y sus grandes bigotes para guiarse por la noche.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-form">
+        <h2>CONTACTO</h2>
+        <form action="contact.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    'Open in GitHub: Project' 
+</body>
+</html>
